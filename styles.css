@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.text,
+.text2 {
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 5rem;
+  right: 20%;
+  bottom: 50%;
+  transform: translate(-20%, -50%);
+  font-family: "Damion", cursive;
+}
+
+@media screen and (max-width: 1024px) {
+  .text,
+  .text2 {
+    font-size: 3rem;
+    right: 50%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+}
