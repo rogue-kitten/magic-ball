@@ -41,20 +41,16 @@ gsap.fromTo(
       start: "50%",
       end: "57%",
     },
-  }
-);
-gsap.fromTo(
-  ".text",
-  {
-    opacity: 1,
-  },
-  {
-    opacity: 0,
-    scrollTrigger: {
-      scrub: 1,
+    onComplete: () => {
+      gsap.to(".text", {
+        opacity: 0,
+        scrollTrigger: {
+          scrub: 1,
 
-      start: "57%",
-      end: "64%",
+          start: "58%",
+          end: "64%",
+        },
+      });
     },
   }
 );
@@ -72,20 +68,16 @@ gsap.fromTo(
       start: "64%",
       end: "71%",
     },
-  }
-);
-gsap.fromTo(
-  ".text2",
-  {
-    opacity: 1,
-  },
-  {
-    opacity: 0,
-    scrollTrigger: {
-      scrub: 1,
+    onComplete: () => {
+      gsap.to(".text2", {
+        opacity: 0,
+        scrollTrigger: {
+          scrub: 1,
 
-      start: "71%",
-      end: "78%",
+          start: "72%",
+          end: "78%",
+        },
+      });
     },
   }
 );
