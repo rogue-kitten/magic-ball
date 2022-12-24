@@ -1,3 +1,11 @@
+window.onload = () => {
+  var s = document.getElementsByClassName("loader-wrapper")[0].style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  })();
+};
+
 const canvas = document.getElementsByClassName("canvas");
 
 const context = canvas[0].getContext("2d");
