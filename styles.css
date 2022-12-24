@@ -28,6 +28,16 @@ canvas {
   font-family: "Damion", cursive;
 }
 
+@media screen and (max-width: 1024px) {
+  .text,
+  .text2 {
+    font-size: 3rem;
+    right: 50%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+}
+
 .loader-wrapper {
   width: 100vw;
   height: 100vh;
